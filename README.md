@@ -57,8 +57,9 @@ cpus=4
           insmod-18954 [002] 30213.960218: funcgraph_entry:        0.822 us   |        prepare_signal();
           insmod-18954 [002] 30213.960219: funcgraph_exit:         1.673 us   |      }
           insmod-18954 [002] 30213.960219: funcgraph_exit:         5.018 us   |    }
-
- root@ubuntu:~/work# trace-cmd report | grep -A 15 load_module
+```
+```
+root@ubuntu:~/work# trace-cmd report | grep -A 15 load_module
           insmod-18954 [002] 30213.994129: funcgraph_entry:                   |      load_module() {
           insmod-18954 [002] 30213.994130: funcgraph_entry:        0.593 us   |        find_sec();
           insmod-18954 [002] 30213.994131: funcgraph_entry:        0.681 us   |        get_next_modinfo();
